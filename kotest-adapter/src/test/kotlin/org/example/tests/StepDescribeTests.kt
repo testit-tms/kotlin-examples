@@ -8,8 +8,6 @@ import ru.testit.models.LinkType
 import ru.testit.models.TestItContext
 import ru.testit.utils.*
 
-/***/
-
 // isStepContainer true, 2 tests, before(failed) + after(failed): failed both
 class BeforeAfterFailed : DescribeSpec({
     extensions(TestItReporter(true))
@@ -67,7 +65,7 @@ class BeforePassedAfterPassed : DescribeSpec({
     }
 })
 
- /**/
+
 // isStepContainer true, 1 test, 2 steps before + after(failed): ok + failed
 class BeforeAfterSteps : DescribeSpec({
     extensions(TestItReporter(true))
