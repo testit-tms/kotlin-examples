@@ -18,20 +18,6 @@ class NestingTest : FunSpec({
    val testit = TestItReporter(true)
    extensions(testit)
 
-   beforeTest {
-       it.setContext(
-           TestItContext(
-           title = "another triple test",
-           description = "another description"
-       ))
-       1 shouldBe 1
-   }
-   afterTest {
-       it.testItAfterTest {
-           1 shouldBe 1
-       }
-   }
-
    context("Pythag triples tests") {
        withData(
            PythagTriple(3, 4, 5),

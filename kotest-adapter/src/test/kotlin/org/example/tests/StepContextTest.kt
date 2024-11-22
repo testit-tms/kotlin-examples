@@ -19,7 +19,6 @@ class StepContextTest : FunSpec({
        ))
 
        test("shouldFail_") {
-
            true shouldBe false
        }
 
