@@ -9,7 +9,7 @@ import ru.testit.utils.asStepContainer
 import ru.testit.utils.setContext
 
 class StepContextTest : FunSpec({
-   extensions(TestItReporter(true, ))
+   extensions(TestItReporter())
 
 
    context("fun step spec test") {
