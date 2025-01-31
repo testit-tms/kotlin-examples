@@ -10,7 +10,7 @@ import ru.testit.utils.*
 
 // isStepContainer true, 2 tests, before(failed) + after(failed): failed both
 class BeforeAfterFailed : DescribeSpec({
-    extensions(TestItReporter(true))
+    extensions(TestItReporter())
     beforeTest {
         "beforeTest" shouldBe "Failed"
     }
@@ -30,7 +30,7 @@ class BeforeAfterFailed : DescribeSpec({
 
 // isStepContainer true, 2 tests, before + after: ok + failed
 class BeforeAfterPassed : DescribeSpec({
-    extensions(TestItReporter(true))
+    extensions(TestItReporter())
     beforeTest {
     }
     // executes even if beforeTest is failed
@@ -48,7 +48,7 @@ class BeforeAfterPassed : DescribeSpec({
 
 // isStepContainer true, 2 tests, before + after(failed): failed
 class BeforePassedAfterPassed : DescribeSpec({
-    extensions(TestItReporter(true))
+    extensions(TestItReporter())
     beforeTest {
     }
     // executes even if beforeTest is failed
@@ -68,7 +68,7 @@ class BeforePassedAfterPassed : DescribeSpec({
 
 // isStepContainer true, 1 test, 2 steps before + after(failed): ok + failed
 class BeforeAfterSteps : DescribeSpec({
-    extensions(TestItReporter(true))
+    extensions(TestItReporter())
 
     beforeTest {
         it.setSetupName("beforeTest")
@@ -103,7 +103,7 @@ class BeforeAfterSteps : DescribeSpec({
 
 // isStepContainer false, 2 tests, before + after(failed): ok + failed
 class BeforeAfterStepsContainerFalse : DescribeSpec({
-    extensions(TestItReporter(isStepContainers = false))
+    extensions(TestItReporter())
 
     beforeTest {
         it.setSetupName("beforeTest")

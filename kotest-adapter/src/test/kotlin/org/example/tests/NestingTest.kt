@@ -15,7 +15,7 @@ fun isPythagTriple(a: Int, b: Int, c: Int): Boolean = a * a + b * b == c * c
 
 
 class NestingTest : FunSpec({
-   val testit = TestItReporter(true)
+   val testit = TestItReporter()
    extensions(testit)
 
    context("Pythag triples tests") {

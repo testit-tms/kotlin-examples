@@ -15,9 +15,9 @@ val slf4jVersion = "1.7.2"
 val kotest = "5.8.1"
 
 dependencies {
-    testImplementation("ru.testit:testit-api-client-kotlin:0.1.0")
-    testImplementation("ru.testit:testit-kotlin-commons:0.1.1")
-    testImplementation("ru.testit:testit-adapter-kotest:0.1.1")
+    testImplementation("ru.testit:testit-api-client-kotlin:0.3.0")
+    testImplementation("ru.testit:testit-kotlin-commons:0.3.0")
+    testImplementation("ru.testit:testit-adapter-kotest:0.3.0")
     testImplementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.7.3")
     testImplementation("org.slf4j:slf4j-api:$slf4jVersion")
     testImplementation("org.slf4j:slf4j-simple:$slf4jVersion")
